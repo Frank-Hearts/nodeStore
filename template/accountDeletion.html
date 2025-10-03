@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Email Verification</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .header {
+      text-align: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .header h1 {
+      color: #4CAF50;
+      margin: 0;
+      font-size: 24px;
+    }
+    .code {
+      text-align: center;
+      font-size: 32px;
+      letter-spacing: 6px;
+      color: #333;
+      margin: 30px 0;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      color: #999;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>You wan delete your email? Confam am oh!</h1>
+    </div>
+    <p>Hello {{fullName}},</p>
+    <p>Use the code below to complete your account deletion. This code was sent to make sure you're the one performing this action.</p>
+    <div class="code">{{code}}</div>
+    <p>This code expires in 10 minutes.</p>
+    <div class="footer">
+      &copy; {{year}} Your Company. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
