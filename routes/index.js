@@ -4,5 +4,7 @@ router.use("/auth", require("./auth.route"));
 router.use("/user", require("./user.route"));
 router.use("/admin", require("./admin.route"));
 router.use("/product", require("./product.route"));
+router.use("/cart", require("./cart.route"));
+router.use("/order", require("./order.route"));
 
 module.exports = router;
