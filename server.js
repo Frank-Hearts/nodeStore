@@ -1,16 +1,14 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const dbconnect = require('./config/db.config');
-// const bcrypt = require('bcryptjs');
-// const User = require('./models/user.model');
-// const jwt = require('jsonwebtoken');
-// const { auth } = require('./middleware/auth.middleware');
+const cors = require("cors")
 
 dotenv.config();
 
 dbconnect();
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 // const{PORT} = process.env
